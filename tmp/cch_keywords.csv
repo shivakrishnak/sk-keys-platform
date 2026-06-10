@@ -1,0 +1,56 @@
+id,title,difficulty,topic_type,tags,depends_on,nav_order,permalink_slug
+CCH-001,What Is Caching,★☆☆,3,caching|fundamentals|first-principles,,1,caching/what-is-caching
+CCH-002,Cache Hit and Cache Miss,★☆☆,3,caching|fundamentals|terminology,,2,caching/cache-hit-miss
+CCH-003,Why Caching Works - Locality of Reference,★☆☆,3,caching|fundamentals|theory,CCH-001,3,caching/locality-of-reference
+CCH-004,Cache-Aside Pattern,★☆☆,1,caching|patterns|read-patterns,CCH-001,4,caching/cache-aside-pattern
+CCH-005,Read-Through Cache,★☆☆,1,caching|patterns|read-patterns,CCH-001,5,caching/read-through-cache
+CCH-006,Write-Through Cache,★☆☆,1,caching|patterns|write-patterns,CCH-001,6,caching/write-through-cache
+CCH-007,Write-Behind (Write-Back) Cache,★★☆,1,caching|patterns|write-patterns,CCH-006,7,caching/write-behind-cache
+CCH-008,Write-Around Cache,★☆☆,1,caching|patterns|write-patterns,CCH-006,8,caching/write-around-cache
+CCH-009,TTL - Time to Live,★☆☆,1,caching|eviction|configuration,CCH-001,9,caching/ttl-time-to-live
+CCH-010,Cache Eviction Policies Overview,★☆☆,3,caching|eviction|fundamentals,CCH-001,10,caching/eviction-policies-overview
+CCH-011,LRU - Least Recently Used,★★☆,1,caching|eviction|algorithms,CCH-010,11,caching/lru-eviction
+CCH-012,LFU - Least Frequently Used,★★☆,1,caching|eviction|algorithms,CCH-010,12,caching/lfu-eviction
+CCH-013,FIFO and Random Eviction,★☆☆,1,caching|eviction|algorithms,CCH-010,13,caching/fifo-random-eviction
+CCH-014,Cache Invalidation Strategies,★★☆,3,caching|invalidation|consistency,CCH-001,14,caching/cache-invalidation-strategies
+CCH-015,Event-Driven Cache Invalidation,★★☆,1,caching|invalidation|events,CCH-014,15,caching/event-driven-invalidation
+CCH-016,Cache Stampede (Thundering Herd),★★☆,3,caching|failure-modes|concurrency,CCH-002,16,caching/cache-stampede
+CCH-017,Cache Penetration,★★☆,3,caching|failure-modes|security,CCH-002,17,caching/cache-penetration
+CCH-018,Cache Avalanche,★★☆,3,caching|failure-modes|availability,CCH-002,18,caching/cache-avalanche
+CCH-019,Stale-While-Revalidate,★★☆,1,caching|patterns|staleness,CCH-014,19,caching/stale-while-revalidate
+CCH-020,Multi-Layer Caching Architecture,★★☆,1,caching|architecture|layers,CCH-004,20,caching/multi-layer-caching
+CCH-021,CDN Caching,★★☆,1,caching|cdn|edge,CCH-020,21,caching/cdn-caching
+CCH-022,Browser Cache and HTTP Cache Headers,★★☆,4,caching|http|browser,CCH-021,22,caching/browser-http-cache
+CCH-023,Application-Level Caching,★☆☆,1,caching|application|in-process,CCH-020,23,caching/application-level-caching
+CCH-024,Distributed Cache vs Local Cache,★★☆,3,caching|architecture|distributed,CCH-020,24,caching/distributed-vs-local-cache
+CCH-025,Cache Warming,★★☆,2,caching|operations|performance,CCH-002,25,caching/cache-warming
+CCH-026,Cache Serialization and Compression,★★☆,2,caching|performance|serialization,CCH-024,26,caching/cache-serialization
+CCH-027,Consistent Hashing for Cache Distribution,★★★,3,caching|distributed|algorithms,CCH-024,27,caching/consistent-hashing-cache
+CCH-028,Cache Coherence in Distributed Systems,★★★,3,caching|distributed|consistency,CCH-024,28,caching/cache-coherence
+CCH-029,Near Cache and Two-Tier Topology,★★★,1,caching|architecture|hybrid,CCH-024,29,caching/near-cache-two-tier
+CCH-030,Cache Sizing and Memory Budgeting,★★☆,2,caching|capacity|operations,CCH-010,30,caching/cache-sizing-memory
+CCH-031,Hot Key Problem,★★★,3,caching|failure-modes|hotspots,CCH-027,31,caching/hot-key-problem
+CCH-032,Cache Monitoring and Observability,★★☆,2,caching|observability|metrics,CCH-002,32,caching/cache-monitoring
+CCH-033,Cache Hit Ratio Optimization,★★☆,2,caching|performance|tuning,CCH-032,33,caching/cache-hit-ratio-optimization
+CCH-034,Memcached Architecture and Internals,★★☆,1,caching|memcached|internals,CCH-024,34,caching/memcached-architecture
+CCH-035,Cache-Database Consistency Patterns,★★★,3,caching|consistency|database,CCH-014,35,caching/cache-db-consistency
+CCH-036,Dogpile Effect and Locking Strategies,★★★,1,caching|concurrency|locking,CCH-016,36,caching/dogpile-locking
+CCH-037,HTTP Caching - ETag and Conditional Requests,★★☆,4,caching|http|conditional,CCH-022,37,caching/http-etag-conditional
+CCH-038,Reverse Proxy Caching (Varnish and Nginx),★★☆,2,caching|proxy|infrastructure,CCH-020,38,caching/reverse-proxy-caching
+CCH-039,Object Caching vs Query Caching,★★☆,3,caching|patterns|granularity,CCH-023,39,caching/object-vs-query-caching
+CCH-040,Session Caching,★☆☆,1,caching|application|sessions,CCH-023,40,caching/session-caching
+CCH-041,Cache Partitioning and Sharding,★★★,1,caching|distributed|partitioning,CCH-027,41,caching/cache-partitioning-sharding
+CCH-042,Caching Anti-Patterns,★★☆,3,caching|anti-patterns|mistakes,CCH-001,42,caching/caching-anti-patterns
+CCH-043,Cache Precomputation and Derived Data,★★★,1,caching|patterns|precomputation,CCH-025,43,caching/cache-precomputation
+CCH-044,Graceful Degradation When Cache Fails,★★★,1,caching|resilience|fallback,CCH-018,44,caching/graceful-degradation-cache
+CCH-045,Cache Security - Poisoning and Side-Channels,★★★,3,caching|security|attacks,CCH-017,45,caching/cache-security-poisoning
+CCH-046,Caching in Microservices Architecture,★★★,1,caching|microservices|distributed,CCH-024,46,caching/caching-microservices
+CCH-047,Edge Computing and Cache at the Edge,★★★,1,caching|edge|cdn,CCH-021,47,caching/edge-computing-cache
+CCH-048,Cache Cost Modeling and TCO,★★★,3,caching|economics|capacity,CCH-030,48,caching/cache-cost-modeling
+CCH-049,Caching for Machine Learning Inference,★★★,1,caching|ml|inference,CCH-043,49,caching/caching-ml-inference
+CCH-050,Cache Migration and Version Upgrades,★★★,2,caching|operations|migration,CCH-024,50,caching/cache-migration-upgrades
+CCH-051,Adaptive Replacement Cache (ARC),★★★,1,caching|eviction|advanced,CCH-011,51,caching/adaptive-replacement-cache
+CCH-052,Caching Decision Framework,★★★,3,caching|architecture|decisions,CCH-001,52,caching/caching-decision-framework
+CCH-053,Cache Topology Patterns,★★★,3,caching|architecture|topology,CCH-020,53,caching/cache-topology-patterns
+CCH-054,Research Frontiers in Caching,★★★,3,caching|research|future,CCH-051,54,caching/research-frontiers-caching
+CCH-055,Caching Interview Preparation Guide,★★★,3,caching|interview|preparation,CCH-052,55,caching/caching-interview-guide

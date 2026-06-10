@@ -1,0 +1,15 @@
+=== COUNTS PER FOLDER ===
+AIP-ai-product: 65 files
+AIS-ai-safety-ethics: 43 files
+CVS-computer-vision: 60 files
+DLN-deep-learning: 70 files
+GEN-generative-ai: 55 files
+LLM-llms-prompt-eng: 80 files
+MLA-ml-foundations: 80 files
+MLP-mlops-infrastructure: 60 files
+NLP-natural-language: 60 files
+RAG-rag-agents: 103 files
+RFL-reinforcement-learning: 50 files
+
+=== NON-VERSION-6 FILES ===
+Done checking
